@@ -1,0 +1,45 @@
+#simplesimon {
+	width: 320px;
+    height: 320px;
+    border-radius: 300px;
+    position: relative;
+}
+
+#start {
+	margin-left: 130px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    opacity: 0.40;
+}
+
+.one {
+	background-color: red;
+	border-top-left-radius: 100px;
+}	
+
+.two {
+	background-color: blue;
+	border-top-right-radius: 100px;
+}
+
+.three {
+	background-color: green;
+	border-bottom-left-radius: 100px;
+}
+
+.four {
+	background-color: purple;
+	border-bottom-right-radius: 100px;
+}	
+
+/*button:hover {
+	opacity: 0.5;
+}*/
+
+button:active {
+	opacity: 1.00;
+}
