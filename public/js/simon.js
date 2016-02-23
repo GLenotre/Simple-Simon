@@ -1,6 +1,8 @@
 "use strict";
 
 $("#start").click(function() {
+	index = 0;
+	sequence = [];
 	chooseCircle();
 	displaySequence();
 });
@@ -35,6 +37,7 @@ var index = 0;
 $('.circle').click(function(e) {
 	var clickedCircle = $(this).data('id');
 	if (clickedCircle == sequence[index]) {
+		// showPrize();
 		index++;
 		if (index == sequence.length) {
 			index = 0;
@@ -43,5 +46,14 @@ $('.circle').click(function(e) {
 		}
 	} else if (clickedCircle != sequence[index]) {
 		index = 0;
+		clearTimeout();
+		sequence = [];
 	};
 });
+
+
+// function showPrize() {
+// 	if (index >= 1) {
+// 		$('.prize').removeId("prize1");
+// 	}
+// }
